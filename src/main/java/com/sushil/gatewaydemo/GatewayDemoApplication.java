@@ -13,7 +13,7 @@ public class GatewayDemoApplication {
 		SpringApplication.run(GatewayDemoApplication.class, args);
 	}
 
-	@Bean
+//	@Bean
 	public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
 		return builder.routes()
 				.route(r -> r.path("/posts/**")
